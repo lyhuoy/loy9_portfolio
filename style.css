@@ -1,0 +1,265 @@
+/* Windows XP inspired styles */
+body {
+    font-family: "Tahoma", "Arial", sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.main-content {
+    display: block;
+}
+
+/* Main Content Styles */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    border: 3px solid #bfbfbf;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.window {
+    border-radius: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.window-header {
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-title {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.window-icon {
+    min-width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+.window-controls {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.window-controls:hover {
+    cursor: pointer;
+}
+
+.window-button {
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    border: 1px solid #919b9c;
+    text-align: center;
+    line-height: 14px;
+    font-size: 12px;
+    cursor: default;
+}
+
+.window-content {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border: 1px solid #919b9c;
+}
+
+.navigation {
+    display: flex;
+    background-color: #ffffff;
+    border-bottom: 1px solid #919b9c;
+    padding: 5px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    padding: 2px 8px;
+    margin: 2px;
+    border: 1px solid #919b9c;
+    cursor: default;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.nav-button:hover {
+    background-color: #cbcbcbc3;
+    cursor: pointer;
+}
+
+.nav-button.active {
+    background-color: #fff8dc;
+    border-bottom: 1px solid #fff8dc;
+}
+
+.address-bar {
+    background-color: #ffffff;
+    border: 1px solid #919b9c;
+    padding: 3px 5px;
+    margin: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.address-text {
+    color: #0000ff;
+    text-decoration: underline;
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Status Bar */
+.status-bar {
+    border: 1px solid #919b9c;
+    padding: 3px 10px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Content Styles */
+h1,
+h2,
+h3 {
+    color: #000000;
+    border-bottom: 1px solid #d4d0c8;
+    padding-bottom: 5px;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #800080;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .profile {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.profile-image {
+    border: 1px solid #919b9c;
+    padding: 3px;
+    background-color: #ffffff;
+    margin: 0 0 15px 0;
+    max-width: 150px;
+    height: auto;
+    border-radius: 100%;
+}
+
+@media (min-width: 600px) {
+    .profile-image {
+        margin: 0 15px 0 0;
+    }
+}
+
+.experience {
+    margin-top: 20px;
+}
+
+.job {
+    border: 1px solid #d4d0c8;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+.job-date {
+    color: #666666;
+}
+
+.job-company {
+    margin: 5px 0;
+}
+
+.job-description {
+    margin-top: 10px;
+}
+
+.job-description ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.best-viewed {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #d4d0c8;
+    margin: 15px 0;
+}
+
+/* Additional responsive rules */
+@media (max-width: 480px) {
+    .container {
+        margin: 0;
+        border-width: 0;
+    }
+
+    .window {
+        margin-bottom: 0;
+    }
+
+    .window-content {
+        padding: 8px;
+    }
+
+    .window-title {
+        font-size: 12px;
+    }
+}
